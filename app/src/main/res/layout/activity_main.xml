@@ -8,12 +8,41 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Tunes Alive"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="West Midlands"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <Button
+        android:id="@+id/loginOption"
+        android:layout_width="161dp"
+        android:layout_height="72dp"
+        android:text="Login"
+        android:textSize="20sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <Button
+        android:id="@+id/registerOption"
+        android:layout_width="161dp"
+        android:layout_height="72dp"
+        android:text="Register"
+        android:textSize="20sp"
+        app:cornerRadius="30px"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="546dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
