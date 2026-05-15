@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +14,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tunes_Alive_WM">
+        <activity
+            android:name=".SongChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShareSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpecificLandmarkActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB4OvhoU3NBZJSKRi-uP-6c-zcayP3Bhq0" />
+
+        <activity
+            android:name=".LoginArtist"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterArtist"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOptions"
+            android:exported="false" />
         <activity
             android:name=".RegisterOptions"
             android:exported="false" />
@@ -23,6 +52,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

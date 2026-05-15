@@ -5,30 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterOptions"
+    tools:context=".LoginArtist"
     android:background="#000000">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="270dp"
-        android:layout_height="45dp"
+        android:layout_height="70dp"
         android:fontFamily="@font/rubik_mono_one"
-        android:text="Register"
+        android:text="Artist\nLogin"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="@+id/block"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/block"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintVertical_bias="0.766" />
 
     <TextView
         android:id="@+id/block"
         android:layout_width="366dp"
         android:layout_height="487dp"
         android:background="@drawable/block"
-        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,44 +48,53 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.104" />
 
-    <TextView
-        android:id="@+id/landingDivider"
-        android:layout_width="240dp"
-        android:layout_height="4dp"
-        android:background="@drawable/register_login_divider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#9F9F9F"
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toTopOf="@+id/block"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#9F9F9F"
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        app:layout_constraintVertical_bias="0.226" />
 
     <Button
-        android:id="@+id/artistOption"
-        android:layout_width="290dp"
+        android:id="@+id/submitLoginButton"
+        android:layout_width="200dp"
         android:layout_height="68dp"
-        android:text="ARTIST"
+        android:text="Sign In"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:backgroundTint="#5C00B3"
         app:cornerRadius="30px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
-
-    <Button
-        android:id="@+id/listenerOption"
-        android:layout_width="290dp"
-        android:layout_height="68dp"
-        android:text="LISTENER"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:backgroundTint="#5C00B3"
-        app:cornerRadius="30px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="@+id/block"
+        app:layout_constraintStart_toStartOf="@+id/block"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:layout_constraintVertical_bias="0.4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

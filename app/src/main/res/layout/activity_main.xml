@@ -5,44 +5,90 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/landing_page_background"
+    >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_mono_one"
         android:text="Tunes Alive"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="172dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <TextView
+        android:id="@+id/landingDivider"
+        android:layout_width="240dp"
+        android:layout_height="4dp"
+        android:background="@drawable/landing_title_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
         android:text="West Midlands"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="246dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
 
     <Button
         android:id="@+id/loginOption"
-        android:layout_width="161dp"
-        android:layout_height="72dp"
+        android:layout_width="203dp"
+        android:layout_height="68dp"
         android:text="Login"
-        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#5C00B3"
         app:cornerRadius="30px"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="409dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
 
     <Button
         android:id="@+id/registerOption"
-        android:layout_width="161dp"
-        android:layout_height="72dp"
+        android:layout_width="203dp"
+        android:layout_height="68dp"
         android:text="Register"
-        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#A84DFF"
         app:cornerRadius="30px"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="546dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

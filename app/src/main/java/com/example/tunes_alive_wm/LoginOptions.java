@@ -10,13 +10,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class RegisterOptions extends AppCompatActivity {
+public class LoginOptions extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_register_options);
+        setContentView(R.layout.activity_login_options);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,16 +25,15 @@ public class RegisterOptions extends AppCompatActivity {
         });
 
         // RETURN Button
-        Button returnButton1 = findViewById(R.id.returnButton1);
-        // RETURN Button clickListener
-        returnButton1.setOnClickListener(v -> {
+        Button returnButton2 = findViewById(R.id.returnButton2);
+        returnButton2.setOnClickListener(v ->{
             finish();
         });
 
-        // ARTIST Button
-        Button artistOption = findViewById(R.id.artistOption);
-        artistOption.setOnClickListener(v -> {
-            Intent intent = new Intent(RegisterOptions.this, RegisterArtist.class);
+        // RETURN Button clickListener
+        Button artistOption2 = findViewById(R.id.artistOption2);
+        artistOption2.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginOptions.this, LoginArtist.class);
             startActivity(intent);
         });
     }
